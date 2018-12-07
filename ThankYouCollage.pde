@@ -1,1 +1,49 @@
-//add thank you code here
+//int   
+int X= 100;
+int Y= 500;
+int bounce = 5;
+PImage img;
+PImage pic;
+PImage reg;
+PImage ninb;
+
+
+//setup
+void setup() {
+  size(600, 600);
+  img = loadImage("rainbowheelbg.jpg");
+  img.resize(50, 50);
+  pic = loadImage("reggiepic.png");
+  pic.resize(300, 200);
+  reg = loadImage("regreg.jpg");
+  reg.resize(200, 200);
+  image(img, 10, 10);
+  ninb = loadImage("nintendopixlr.png");
+}
+void draw() {
+  background(255, 0, 0);
+  imageMode(CENTER);
+ 
+  if (mousePressed) {
+    fill(0);
+    image(pic, 100, 100);
+    image(reg, 500, 100);
+    image(ninb,300,300);
+    text("Thanks Reggie", X, Y, 100, 100);
+    X=X+bounce;
+    if(X>width-100 || X<0)
+ {
+   bounce=bounce*(-1);
+ }
+   
+  } else {
+    fill(255,0,0);
+    noFill();
+    fill(0);
+    text("Press the circle below to show thanks!",100,100);
+   
+  }
+  ellipse(300, 450, 100, 100);
+  textSize(20);
+
+}
