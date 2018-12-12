@@ -11,9 +11,9 @@ PImage ninb;
 void setup() {
   size(600, 600);
   pic = loadImage("reggiepic.png");
-  pic.resize(300, 200);
+  pic.resize(200, 100);
   reg = loadImage("regreg.jpg");
-  reg.resize(200, 200);
+  reg.resize(100, 100);
   ninb = loadImage("nintendopixlr.png");
   
 }
