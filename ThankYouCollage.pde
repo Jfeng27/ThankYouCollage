@@ -14,7 +14,6 @@ void setup() {
   pic.resize(300, 200);
   reg = loadImage("regreg.jpg");
   reg.resize(200, 200);
-  image(img, 10, 10);
   ninb = loadImage("nintendopixlr.png");
   
 }
