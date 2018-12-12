@@ -16,7 +16,7 @@ void setup() {
   reg.resize(200, 200);
   image(img, 10, 10);
   ninb = loadImage("nintendopixlr.png");
-  textAlign(CENTER);
+  
 }
 void draw() {
   background(255, 0, 0);
