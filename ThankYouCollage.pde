@@ -2,7 +2,6 @@
 int X= 100;
 int Y= 500;
 int bounce = 5;
-PImage img;
 PImage pic;
 PImage reg;
 PImage ninb;
@@ -11,14 +10,13 @@ PImage ninb;
 //setup
 void setup() {
   size(600, 600);
-  img = loadImage("rainbowheelbg.jpg");
-  img.resize(50, 50);
   pic = loadImage("reggiepic.png");
   pic.resize(300, 200);
   reg = loadImage("regreg.jpg");
   reg.resize(200, 200);
   image(img, 10, 10);
   ninb = loadImage("nintendopixlr.png");
+  textAlign(CENTER);
 }
 void draw() {
   background(255, 0, 0);
